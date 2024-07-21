@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Your Movie Ticket</h1>
+        <div class="movie-container">
+            <label>Pick a movie:</label>
+            <select id="movie">
+                <option>Choose</option>
+                <option value="100">Avengers: Endgame (Rs100)</option>
+                <option value="120">Wednesday(Rs 120)</option>
+                <option value="150">Pushpa(Rs150)</option>
+                <option value="100">12th fail(Rs100)</option>
+            </select>
+        </div>
+        <div class="time-container">
+            <label>Choose slot:</label>
+            <select id="time">
+                <option>Select</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+            </select>
+        </div>
+        <div class="seat-container">
+            <div class="screen"></div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <p class="text">You have selected <span id="count">0</span> seats for a total price of Rs<span id="total"> 0</span></p>
+        <button id="book-button">Book Now</button>
+        <div id="booking-details" class="hidden">
+            <h2>Booking Details</h2>
+            <p>Movie: <span id="booked-movie"></span></p>
+            <p>Time: <span id="booked-time"></span></p>
+            <p>Seats: <span id="booked-seats"></span></p>
+            <p>Total Price: Rs<span id="booked-total"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
